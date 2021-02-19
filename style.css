@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap");
+
+#korean {
+  font-family: "Nanum+Myeongjo", Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+main {
+  padding: 20px;
+  overflow: auto;
+  padding-left: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.jumbotron {
+  padding: 20px;
+  background-color: rgb(29, 29, 29);
+  text-align: center;
+  color: white;
+}
+
+.jumbotron h1 {
+  font-size: 30px;
+  text-align: left;
+}
+.jumbotron p {
+  text-align: left;
+}
+
+nav {
+  background-color: rgb(68, 68, 68);
+  padding: 5px;
+  position: sticky !important;
+  top: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+
+nav a {
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  margin: 0;
+}
+
+nav a:hover {
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  list-style-type: none;
+  margin-right: 20px;
+}
+
+#content {
+  float: center;
+  width: 80%;
+}
+
+#contents {
+  float: left;
+  width: 75%;
+}
+
+.card {
+  box-shadow: 0 4px 21px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+}
+
+aside {
+  float: right;
+  width: 20%;
+  padding: 20px;
+  margin: 0;
+  border-radius: 0px;
+  box-shadow: 0 4px 21px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+
+td{
+    text-align: justify;
+    line-height: 2em;  
+    padding: 20px;
+}
+
+
+th {
+  text-align: left;
+  padding: 5%;
+  line-height: 2em;
+}
+
+a:link, a:visited {
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+    color: white;
+  }
+
+.profile img {
+  width: 200px;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: rgb(68, 68, 68);
+  text-align: center;
+  font-weight: bold;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.featured-image {
+  width: 100%;
+  max-width: 200px;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn,
+  .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 780) {
+  .grid-container img {
+    max-width: 100px;
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  nav a {
+    float: none;
+    width: 100%;
+    display: block;
+    object-position: center;
+  }
+
+  .grid-container {
+    display: block;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  #content,
+  #contents,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
