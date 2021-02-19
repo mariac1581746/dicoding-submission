@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slide.css">
+    
+    <title>DramaInki</title>
+</head>
+<body>
+    <div>
+    <header class="jumbotron">
+        <h1 id="korean">DramaInki / 인기 드라마</h1>
+        <p>Download and Stream Popular Korean Drama</p>     
+    </header>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#ongoing">Ongoing Drama</a></li>
+            <li><a href="#popular">Drama Popular</a></li>
+            <li><a href="#movie">Korean Movie</a></li>
+        </ul>
+    </nav>
+
+    <main>
+    <div class="card">
+    <div class="slideshow-container" id="content">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="Asset/slide1.jpg" class="featured-image1">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="Asset/slide2.jpg" class="featured-image1">
+          
+        </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <br>     
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+        </div>
+    </div>
+    </div>
+
+    <div id="contents">
+        <div class="card" id="ongoing">
+        <h2>Ongoing Drama</h2>
+        <article  class="grid-container">        
+            <section class="item1">
+                <img src="Asset/on1.jpg" class="featured-image" alt="She Would Never Know (2021)">
+                <h3>She Never Know</h3>
+                <p>2021.</p>
+            </section>
+
+            <section class="item2">
+                <img src="Asset/on2.jpg" alt="Sisyphus: The Myth (2021)" class="featured-image">
+                <h3>Sisyphus: The Myth</h3>
+                <p>2021.</p>
+            </section>
+
+            <section class="item3">
+                <img src="Asset/on3.jpg" alt="A Love So Beautiful (2020)" class="featured-image">
+                <h3>A Love So Beautiful </h3>
+                <p>2020.</p>
+            </section>
+
+            <section class="item4">
+                <img src="Asset/on4.jpg" alt="L.U.C.A.: The Beginning (2021)" class="featured-image">
+                <h3>L.U.C.A.: The Beginning</h3>
+                <p>2021.</p>
+            </section>
+
+        </article>
+        </div>        
+
+        <div class="card" id="popular">
+            <h2>Drama Popular</h2>
+            <article class="grid-container">        
+                <section class="item5">
+                    <img src="Asset/pop1.jpg" alt="Suspicious Partner" class="featured-image">
+                    <h3>Suspicious Partner</h3>
+                    <p>2017.</p>
+                </section>
+    
+                <section class="item6">
+                    <img src="Asset/pop2.jpg" alt="Goblin (2016)" class="featured-image">
+                    <h3>Goblin</h3>
+                    <p>2016.</p>
+                </section>
+    
+                <section class="item7">
+                    <img src="Asset/pop3.jpg" alt="The King Loves" class="featured-image">
+                    <h3>The King Loves</h3>
+                    <p>2017.</p>
+                </section>
+    
+                <section class="item8">
+                    <img src="Asset/pop4.jpg" alt="The Legend of the Blue Sea" class="featured-image">
+                    <h3>The Legend of the Blue Sea</h3>
+                    <p>2016.</p>
+                </section>
+    
+            </article>
+            </div>  
+    </div>
+    
+
+    <aside>
+        <article class="profile" id="movie">
+            <header>
+            <h2>Hot Korean Movie<h2>
+            <p>Space Sweeper (2021)</p>
+        <figure>
+            <img src="Asset/movie.jpg" alt="Space Sweepers (2021)">
+            <figcaption></figcaption>
+        </figure>
+            </header>
+        </article>
+        
+        <section>
+            <h3>Informasi Lainnya</h3>
+            <table>
+               <tr>
+                  <th>Synopsis</th>
+               </tr>
+
+                <tr>
+                  <td>In the year 2092, space is full of dangerous floating garbage like discarded satellites and deserted spaceships. The crew of a space junk collector ship called The Victory discovers a humanoid robot that’s known to be a weapon of mass destruction. They get involved in a risky business deal and travel through space looking for garbage they can make money off of while also competing with rival junk collectors.</td>
+               </tr>                
+               <tr>
+                  <th>Download</th>
+               </tr>
+               <tr>
+                  <td style="text-align: center;"><a href="https://185.231.223.71/links/toh4236qfu/" target="_blank">Download</a></td>
+               </tr>
+           </table>
+        </section>
+    </aside>
+
+
+    </main>
+    
+    <footer>
+        <p>DramaInki &#169; 2020, Final Dicoding Academy </p>
+    </footer>
+
+    <script src="slide.js"></script>
+
+    
+
+
+
+</body>
+</html>
