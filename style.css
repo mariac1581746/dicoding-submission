@@ -170,6 +170,10 @@ footer {
     display: block;
     object-position: center;
   }
+  
+  ul{
+    padding: 0;
+  }
 
   .grid-container {
     display: block;
